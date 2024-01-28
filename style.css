@@ -1,0 +1,197 @@
+/* Лого */
+.logo-name {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+.logo-name-text {
+  font-size: 50px;
+  line-height: 100px;
+}
+
+/* Разделы: название */
+.sections-name {
+  position: absolute;
+
+  top: 0;
+  left: 201px;
+  width: 300px;
+  height: 200px;
+
+  border: 1px solid rgb(0, 0, 0);
+
+  text-align: center;
+  font-size: 30px;
+}
+.sections-name-text {
+  left: 50%;
+}
+
+/* Разделы: варианты */
+.sections {
+  position: absolute;
+
+  /*  width element: 75px  */
+  /* height element: 25px  */
+  /*  width grid   : 300px */
+  /* height grid   : 165px */
+  /*    top grid   : 45px  */
+  /*   left grid   : 201px */
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-column-gap: calc((300px - 3 * 75px) / 4); /* (width_grid  - 3 * width_element ) / 4 */
+  grid-row-gap: calc((165px - 3 * 25px) / 4);    /* (height_grid - 3 * height_element) / 4 */
+
+  top: 45px;
+  left: calc(201px + (300px - 3 * 75px) / 4);    /* width_grid + grid-column-gap           */
+  width: 300px;
+  height: 165px;
+
+  text-align: center;
+}
+.section {
+  font-size: 20px;
+
+  width: 75px;
+  height: 25px;
+
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Избранное: название */
+.favourites-name {
+  position: absolute;
+
+  top: 201px;
+  left: 201px;
+  width: 300px;
+  height: 200px;
+
+  border: 1px solid rgb(0, 0, 0);
+
+  text-align: center;
+  font-size: 30px;
+}
+.favourites-name-text {
+  left: 50%;
+}
+
+/* Разделы: варианты */
+.favourites {
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-column-gap: calc((300px - 2 * 120px) / 3);
+  grid-row-gap: calc((165px - 2 * 120px) / 4);
+
+  top: 246px;
+  left: calc(201px + (300px - 2 * 120px) / 3);
+  width: 300px;
+  height: 165px;
+
+  text-align: center;
+}
+.favourite {
+  font-size: 20px;
+
+  width: 120px;
+  height: 25px;
+
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Меню: название */
+.menu-name {
+  position: absolute;
+
+  top: 101px;
+  left: 0px;
+  width: 200px;
+  height: 300px;
+
+  border: 1px solid rgb(0, 0, 0);
+
+  text-align: center;
+  font-size: 30px;
+}
+.menu-name-text {
+  left: 50%;
+}
+
+/* Меню: варианты */
+.menu {
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: repeat(1, 120px);
+  grid-column-gap: calc((200px - 120px) / 2);
+  grid-row-gap: calc((255px - 6 * 25px) / 7);
+
+  top: 146px;
+  left: calc((200px - 120px) / 2);
+  width: 200px;
+  height: 255px;
+
+  text-align: center;
+}
+.position {
+  font-size: 20px;
+
+  width: 120px;
+  height: 25px;
+
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Не понял, что это за блок */
+.idk-name {
+  position: absolute;
+
+  top: 402px;
+  left: 0;
+  width: 501px;
+  height: 200px;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+.idk-name-text {
+  font-size: 75px;
+  line-height: 100px;
+}
+
+/* Карта */
+.map-name {
+  position: absolute;
+
+  top: 603px;
+  left: 201px;
+  width: 300px;
+  height: 210px;
+
+  border: 1px solid rgb(0, 0, 0);
+
+  text-align: center;
+  font-size: 30px;
+}
+.map-name-text {
+  left: 50%;
+}
+
+.map {
+  position: absolute;
+
+  top: 645px;
+  left: 210px;
+  width: 282px;
+  height: 159px;
+
+  border: 1px solid rgb(0, 0, 0);
+}
